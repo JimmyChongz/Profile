@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+body {
+    position: relative;
+}
+
+.backgroundImg {
+    position: absolute;
+    top: -10vh;
+    right: 0;
+    z-index: -1;
+    width: 50vw;
+    height: 150vh;
+}
+
+header {
+    box-shadow: 0px 1px 10px black;
+    nav {
+        width: 100%;
+        ul {
+            padding: 2rem;
+            width: 60%;
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            li {
+                font-size: 1.75rem;
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.active {
+    color: #E08958;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+
+    section.left {
+        flex: 3 1 500px;
+        padding: 2rem;
+
+        h1 {
+            color: #E08958;
+            font-size: 3rem;
+            padding-bottom: 1rem;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 2rem;
+            padding: 1rem 2rem;
+        }
+
+        p {
+            font-size: 2.23rem;
+            padding: 1rem 0rem;
+        }
+    }
+    section.right {
+        position: relative;
+        flex: 1 1 600px;
+        img.myPic {
+            width: 20vw;
+            height: 20vw;
+            position: absolute;
+            right: 20vw;
+            top: 55vh;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+footer {
+    padding: 1rem;
+    a {
+        padding: 1rem;
+
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .backgroundImg {
+        opacity: 0.5;
+    }
+    header {
+        nav {
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                li {
+                    padding: 0.5rem 0rem;
+                    border-bottom: gray solid;
+                }
+            }
+        }
+    }
+    main {
+        section.right {
+            display: flex;
+            justify-content: center;
+            img.myPic {
+                position: static;
+                transform: none;
+                width: 50vw;
+                height: 50vw;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
