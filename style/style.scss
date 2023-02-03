@@ -165,10 +165,10 @@ main {
 
     section.form {
         flex: 1 1 600px;
-        margin: 2rem 3rem;
+        padding: 2rem 3rem;
 
         form {
-            height: 70vh;
+            min-height: 70vh;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
