@@ -28,6 +28,7 @@ body {
 }
 
 header {
+    width: 100%;
     box-shadow: 0px 1px 10px black;
     position: relative;
     z-index: 2;
@@ -64,9 +65,8 @@ main {
     margin: 2rem 0rem;
 
     section.left {
-        flex: 3 1 500px;
+        flex: 7 1 500px;
         padding: 0rem 2rem;
-        margin-left: 2rem;
 
         h1 {
             color: #E08958;
@@ -88,14 +88,14 @@ main {
 
     section.right {
         position: relative;
-        flex: 1 1 600px;
+        flex: 3 1 600px;
 
         img.myPic {
             width: 30vw;
             height: 30vw;
             position: absolute;
             right: 10vw;
-            top: 50vh;
+            top: 52.5vh;
             transform: translateY(-50%);
         }
     }
@@ -111,12 +111,21 @@ main {
                 td {
                     border-bottom: 2px black solid;
                     padding: 1rem;
-                    font-size: 1.5rem;
+                    font-size: 2rem;
+                    
                 }
 
-                &:hover {
-                    background-color: #f9d9c6;
+                .techlogo {
+                    position: relative;
+                    top: 0.5rem;
                 }
+            }
+        }
+        div.links {
+            display: flex;
+            margin-top: 2rem;
+            a {
+                padding: 1rem;
             }
         }
     }
@@ -127,16 +136,16 @@ main {
 
         img {
             margin-top: 2rem;
-            width: 30vw;
+            width: 25vw;
         }
 
         .orangeRect {
-            width: 30vw;
-            height: 90vh;
+            width: 25vw;
+            height: 40vw;
             background-color: #E08958;
             position: absolute;
             top: 150px;
-            left: 100px;
+            left: 120px;
             z-index: -1;
         }
     }
@@ -144,13 +153,14 @@ main {
 
 footer {
     display: flex;
+    margin-left: 3rem;
 
     a {
         padding: 0rem 1rem;
     }
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1200px) {
     .backgroundImg {
         opacity: 0.5;
     }
@@ -161,7 +171,6 @@ footer {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-
                 li {
                     padding: 0.5rem 0rem;
                     border-bottom: gray solid;
@@ -180,21 +189,27 @@ footer {
                 transform: none;
                 width: 50vw;
                 height: 50vw;
-                margin-bottom: 2rem;
+                margin: 2rem 0rem;
             }
         }
 
         section.picture {
             display: flex;
-            align-items: center;
             justify-content: center;
-            margin-top: 3rem;
-            img {
-                width: 30vw;
-            }
+            align-items: center;
 
             .orangeRect {
                 display: none;
+            }
+        }
+
+        section.table {
+            padding: 0rem;
+            div.links {
+                display: flex;
+                margin-top: 2rem;
+                align-items: center;
+                justify-content: center;
             }
         }
     }
@@ -203,5 +218,6 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-left: 0;
     }
 }

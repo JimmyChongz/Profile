@@ -28,6 +28,7 @@ body {
 }
 
 header {
+  width: 100%;
   box-shadow: 0px 1px 10px black;
   position: relative;
   z-index: 2;
@@ -60,9 +61,8 @@ main {
   margin: 2rem 0rem;
 }
 main section.left {
-  flex: 3 1 500px;
+  flex: 7 1 500px;
   padding: 0rem 2rem;
-  margin-left: 2rem;
 }
 main section.left h1 {
   color: #E08958;
@@ -80,14 +80,14 @@ main section.left p {
 }
 main section.right {
   position: relative;
-  flex: 1 1 600px;
+  flex: 3 1 600px;
 }
 main section.right img.myPic {
   width: 30vw;
   height: 30vw;
   position: absolute;
   right: 10vw;
-  top: 50vh;
+  top: 52.5vh;
   transform: translateY(-50%);
 }
 main section.table {
@@ -100,10 +100,18 @@ main section.table table {
 main section.table table tr td {
   border-bottom: 2px black solid;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
-main section.table table tr:hover {
-  background-color: #f9d9c6;
+main section.table table tr .techlogo {
+  position: relative;
+  top: 0.5rem;
+}
+main section.table div.links {
+  display: flex;
+  margin-top: 2rem;
+}
+main section.table div.links a {
+  padding: 1rem;
 }
 main section.picture {
   flex: 1 1 500px;
@@ -111,26 +119,27 @@ main section.picture {
 }
 main section.picture img {
   margin-top: 2rem;
-  width: 30vw;
+  width: 25vw;
 }
 main section.picture .orangeRect {
-  width: 30vw;
-  height: 90vh;
+  width: 25vw;
+  height: 40vw;
   background-color: #E08958;
   position: absolute;
   top: 150px;
-  left: 100px;
+  left: 120px;
   z-index: -1;
 }
 
 footer {
   display: flex;
+  margin-left: 3rem;
 }
 footer a {
   padding: 0rem 1rem;
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1200px) {
   .backgroundImg {
     opacity: 0.5;
   }
@@ -152,23 +161,29 @@ footer a {
     transform: none;
     width: 50vw;
     height: 50vw;
-    margin-bottom: 2rem;
+    margin: 2rem 0rem;
   }
   main section.picture {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 3rem;
-  }
-  main section.picture img {
-    width: 30vw;
+    align-items: center;
   }
   main section.picture .orangeRect {
     display: none;
+  }
+  main section.table {
+    padding: 0rem;
+  }
+  main section.table div.links {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
   }
   footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 0;
   }
 }/*# sourceMappingURL=style.css.map */

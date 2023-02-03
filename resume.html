@@ -3,11 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Jimmy HSU">
-    <meta name="description" content="ProfilePage">
+    <meta name="author" content="Jimmy Hsu">
+    <meta name="description" content="Jimmy's ProfilePage">
     <title>我的履歷｜Jimmy的個人網站</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
@@ -17,7 +21,7 @@
             <ul>
                 <li><a href="./index.html">首頁</a></li>
                 <li><a class="active" href="./resume.html">我的履歷</a></li>
-                <li><a href="#">聯絡方式</a></li>
+                <li><a href="./contect.html">聯絡方式</a></li>
                 <li><a href="#">Taiwan Project</a></li>
                 <li><a href="#">Hawaii Project</a></li>
             </ul>
@@ -37,11 +41,11 @@
                 </tr>
                 <tr>
                     <td>語言</td>
-                    <td>中文：精通<br>英文：中文</td>
+                    <td>中文：精通<br>英文：中等</td>
                 </tr>
                 <tr>
                     <td>專長</td>
-                    <td>
+                    <td class="techlogo">
                         <img src="./icons/icons8-html-5.svg" alt="HTML5" title="HTML5" />
                         <img src="./icons/icons8-css3.svg" alt="CSS3" title="CSS3" />
                         <img src="./icons/icons8-javascript.svg" alt="JavaScript" title="JavaScript" />
@@ -52,13 +56,18 @@
                 <tr>
                     <td>開發經驗</td>
                     <td>我曾開發過四個網頁前端專案，分別是台灣經濟發展專案台灣經濟發展Project以、夏威夷租借服務網站Project、
-                        深海深產品網頁Project以及CCP-App庫存管理網頁，從構想用Figma畫出網頁架構，設計使用者介面UI/UX設計，
-                        用HTML做出基本網頁架構，SCSS將網頁前端美化以提升使用者體驗。另外使用React
-                        & Typescript 做出網頁的components、State management (Global)、Navigate,
+                        深海深產品網頁Project以及CCP-App庫存管理網頁，從構想到用Figma畫出網頁架構，設計使用者介面UI/UX設計，
+                        用HTML做出基本網頁架構，SCSS將網頁前端美化排版以提升使用者體驗。另外，深海深產品網頁以及CCP-App則是使用React
+                        & Typescript來做，做出視窗中的components，(Global) State management-Recoil，Navigate、
                         Router使網頁功能更為強大，另外還有使用i18n來作多國語言以及git與同學分工合作。
                     </td>
                 </tr>
             </table>
+            <div class="links">
+                <a href="https://www.facebook.com/profile.php?id=100004773163117"><img src="./icons/facebook.svg" alt="link"></a>
+                <a href="https://instagram.com/chongzhididi?igshid=YmMyMTA2M2Y="><img src="./icons/instagram.svg" alt="link"></a>
+                <a href="https://github.com/JimmyChongz"><img src="./icons/github.svg" alt="link"></a>
+            </div>
         </section>
         <section class="picture">
             <img src="./image/myPicture2.png" alt="myPic">
@@ -66,11 +75,7 @@
         </section>
     </main>
 
-    <footer>
-        <a href="#"><img src="./icons/facebook.svg" alt="link"></a>
-        <a href="#"><img src="./icons/instagram.svg" alt="link"></a>
-        <a href="#"><img src="./icons/github.svg" alt="link"></a>
-    </footer>
+    
 </body>
 
 </html>
