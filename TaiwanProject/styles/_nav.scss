@@ -1,0 +1,25 @@
+nav {
+    background-color: #4E4D51;
+    padding-left: 1rem;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+
+        li {
+            display: flex;
+
+            a {
+                padding: 1rem 2rem;
+                color: rgb(194, 186, 186);
+                text-decoration: none;
+                font-size: 1.5rem;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    color: $activeColor;
+                }
+            }
+        }
+    }
+}

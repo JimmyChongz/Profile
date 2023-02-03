@@ -34,9 +34,10 @@ header {
   z-index: 2;
 }
 header nav {
-  width: 70%;
+  width: 100%;
 }
 header nav ul {
+  width: 70%;
   padding: 2rem;
   display: flex;
   list-style-type: none;
@@ -57,17 +58,16 @@ header nav ul li a {
 main {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
-  margin: 2rem 0rem;
 }
 main section.left {
-  flex: 7 1 500px;
+  flex: 7 1 600px;
   padding: 0rem 2rem;
 }
 main section.left h1 {
   color: #E08958;
   font-size: 3rem;
   padding-bottom: 1rem;
+  padding-top: 2rem;
 }
 main section.left h2 {
   font-weight: bold;
@@ -92,7 +92,7 @@ main section.right img.myPic {
 }
 main section.table {
   flex: 3 1 700px;
-  padding: 0rem 3rem;
+  padding: 2rem 3rem;
 }
 main section.table table {
   border-collapse: collapse;
@@ -105,13 +105,6 @@ main section.table table tr td {
 main section.table table tr .techlogo {
   position: relative;
   top: 0.5rem;
-}
-main section.table div.links {
-  display: flex;
-  margin-top: 2rem;
-}
-main section.table div.links a {
-  padding: 1rem;
 }
 main section.picture {
   flex: 1 1 500px;
@@ -130,9 +123,71 @@ main section.picture .orangeRect {
   left: 120px;
   z-index: -1;
 }
+main section.list {
+  flex: 1 1 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem;
+}
+main section.list div.concact h2 {
+  margin: 2rem 0rem;
+  text-align: center;
+}
+main div.line {
+  background-color: gray;
+  width: 3px;
+  margin: 2rem 0rem;
+}
+main section.form {
+  flex: 1 1 600px;
+  margin: 2rem 3rem;
+}
+main section.form form {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main section.form form div {
+  padding: 1rem 0rem;
+}
+main section.form form div input,
+main section.form form div textarea {
+  background-color: #E08958;
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  border: none;
+  width: 100%;
+  border-radius: 15px;
+}
+main section.form form button {
+  align-self: center;
+  width: 10rem;
+  padding: 1rem 1rem;
+  background-color: #ce7846;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  margin: 2rem 0rem;
+  cursor: pointer;
+}
+main section.form form button:hover {
+  background-color: #E08958;
+  color: white;
+}
+
+div.links {
+  display: flex;
+  margin-top: 2rem;
+}
+div.links a {
+  padding: 1rem;
+}
 
 footer {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 3rem;
 }
 footer a {
@@ -179,6 +234,18 @@ footer a {
     margin-top: 2rem;
     align-items: center;
     justify-content: center;
+  }
+  main section.list {
+    border-right: none;
+    padding: 2rem 0.5rem;
+    padding-bottom: 1rem;
+  }
+  main div.line {
+    display: none;
+  }
+  main section.form {
+    margin-top: 0rem;
+    padding-bottom: 2rem;
   }
   footer {
     display: flex;

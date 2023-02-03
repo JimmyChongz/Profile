@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'myFont', sans-serif;
+}
+
+$activeColor: white;
+@mixin flexBox($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@font-face {
+    font-family: 'myFont';
+    src: url(../JasonHandwriting2.ttf);
+}
+
+header {
+    background-color: #c4c4c4;
+    width: 100%;
+    padding: 1rem;
+}
+
+@import "./nav";
+
+.active {
+    color: $activeColor;
+}
+
+main {
+    @include flexBox(row);
+    flex-wrap: wrap;
+}
+
+section {
+    width: 100%;
+    padding: 2rem;
+}
+
+section.left {
+    flex: 4 1 550px;
+    padding: 1.5rem;
+}
+
+section.right {
+    @include flexBox(column);
+    padding: 1.5rem;
+    align-items: center;
+    flex: 1 1 250px;
+
+    p {
+        text-align: center;
+        font-size: 1.25rem;
+        padding: 1rem 0rem;
+    }
+}
+
+section.argriculture {
+    p.special {
+        color: red;
+        text-align: center;
+        font-size: 1.35rem;
+        margin: 0.5rem 0rem;
+    }
+
+    ol {
+        margin-left: 1.25rem;
+    }
+}
+
+section.economy {
+    @include flexBox(column);
+}
+
+.group1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.setAnchor li a {
+    text-decoration: none;
+    color: skyblue;
+}
+
+#curve_chart {
+    width: 100%;
+    height: 80%;
+}
+
+@media screen and (max-width: 550px) {
+    #curve_chart {
+        width: 100%;
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    nav ul {
+        @include flexBox(column);
+    }
+}
