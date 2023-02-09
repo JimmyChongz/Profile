@@ -15,7 +15,6 @@ h6 {
 }
 
 header {
-  position: -webkit-sticky;
   position: sticky;
   display: flex;
   align-items: center;
@@ -81,8 +80,7 @@ main section.backImg button.start {
   cursor: pointer;
 }
 main section.backImg button.start:hover {
-  -webkit-animation: cross 0.5s forwards;
-          animation: cross 0.5s forwards;
+  animation: cross 0.5s forwards;
 }
 main section.backImg div.filter {
   position: absolute;
@@ -210,26 +208,6 @@ footer div.icons a img:hover {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #5a9998;
-}
-
-@-webkit-keyframes cross {
-  from {
-    background-color: #83E7E5;
-    color: black;
-    border: none;
-    border-radius: 1.25rem;
-    font-size: 2rem;
-    padding: 1.5rem 2rem;
-  }
-  to {
-    background-color: aqua;
-    color: white;
-    padding: 2rem 2.5rem;
-    border-radius: 1.25rem;
-    font-size: 2rem;
-    border: none;
-    margin-top: 2rem;
-  }
 }
 
 @keyframes cross {
